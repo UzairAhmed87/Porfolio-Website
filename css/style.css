@@ -7,6 +7,13 @@
   --text-black-900: #302e4d;
   --text-black-700: #504e70;
 }
+body.dark{
+  --bg-black-900: #151515;
+  --bg-black-100: #222222;
+  --bg-black-50: #393939;
+  --text-black-900: #ffffff;
+  --text-black-700: #e9e9e9;
+}
 body {
   margin: 0;
   padding: 0;
@@ -50,8 +57,8 @@ body {
   margin: auto;
 }
 .section .container {
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding-top: 120px;
+  /* padding-bottom: 70px; */
 }
 .section-title {
   max-width: 100%;
@@ -233,7 +240,8 @@ ul {
 .home {
   min-height: 100vh;
   display: flex;
-  color: var(--text-bg-black-900);
+  color: var(--text-black-900);
+ 
 }
 .home .home-info {
   flex: 0 0 60%;
@@ -268,7 +276,7 @@ h3.my-profession span {
   position: relative;
 }
 .home .home-img img {
-  height: 400px;
+  height: 350px;
   margin: auto;
   border-radius: 5px;
 }
