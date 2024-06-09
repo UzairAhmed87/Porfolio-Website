@@ -675,7 +675,7 @@ max-width: 100%;
     gap: 20px;
   }
   .home .home-img img {
-    height: 250px;
+    height: 300px;
     
   }
   .home-img::after {
@@ -687,7 +687,18 @@ max-width: 100%;
     display: none;
   }
   .home .home-img{
-    margin-top: 50px;
+    margin-top: 20px;
+    order: -1;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
+  .home .home-info{
+    flex: 0 0 100%;
+max-width: 100%;
+  }
+  .btn{
+    margin-bottom: 10px;
+  }
+  
 }
 
