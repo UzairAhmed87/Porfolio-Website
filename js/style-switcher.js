@@ -17,8 +17,8 @@ window.addEventListener("load", () => {
     currentStyle = (currentStyle + 1) % alternateStyle.length;
   }
 
-  // Set an interval to change styles every 2 seconds
-   colorChangerInterval = setInterval(changeStyle, 1000);
+  // Set an interval to change styles every 1 second
+   colorChangerInterval = setInterval(changeStyle, 2000);
   // Initial style change
   changeStyle();
   
