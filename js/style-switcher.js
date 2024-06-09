@@ -3,6 +3,7 @@ const styleSwitcher = document.querySelector(".style-switcher");
 const alternateStyle = document.querySelectorAll(".alternate-style");
 const dayNight = document.querySelector(".day-night");
 let currentStyle = 0;
+let colorChangerInterval;
 
 window.addEventListener("load", () => {
   function changeStyle() {
@@ -17,7 +18,7 @@ window.addEventListener("load", () => {
   }
 
   // Set an interval to change styles every 2 seconds
-  setInterval(changeStyle, 1000);
+   colorChangerInterval = setInterval(changeStyle, 1000);
   // Initial style change
   changeStyle();
   
@@ -31,6 +32,9 @@ styleSwitcher.addEventListener("click", () => {
     styleSwitcher.classList.add("open");
   }
 });
+window.addEventListener("scroll",()=>{
+  styleSwitcher.classList.remove("open")
+})
 
 function setActiveStyle(color) {
   alternateStyle.forEach((style) => {
@@ -42,7 +46,7 @@ function setActiveStyle(color) {
       style.setAttribute("disabled", "true");
      
     }
-    
+    clearInterval(colorChangerInterval)
   });
 }
 
